@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+	<style media="screen">
+	
+	<!--Navigation-->
+				
+			.navbar{
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: .9rem;
+				letter-spacing: .1rem;
+				background: rgba(0,0,0,0.6)!important;
+			}
+			
+			.navbar-brand img{
+				height: 2rem;
+				}
+			
+			.navbar-nav li{
+				padding-right: 1rem;
+				}
+				
+			.navbar-dark .navbar-nav .nav-link{
+				color: white;
+				padding-top: .8rem;
+				}
+				
+			.navbar-dark .navbar-nav .nav-link.active
+			{
+				color: tomato; 
+				}
+				
+			.navbar-dark .navbar-nav .nav-link:hover{
+				color: tomato;
+				}
+				
+			<!--End Navigation-->
+
+	
+	.box{
+		position: relative;
+		font-size:30px;
+	}
+	i{
+		position: absolute;
+		font-size:20px;
+		cursor: pointer;
+	}
+	#img{
+		position:absolute;
+	}
+	.dispbox{
+		border:1px solid black;
+		box-sizing: border-box;
+		height:auto;
+		font-size: 30px;
+		border:none;
+		margin-top:240px;
+	}
+	</style>
+</head>
+<body>
+	<!--Navigation-->
+		
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		
+			<a class="navbar-brand"><img src="loginbg.jpg"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link"  href="dashboard.html">HOME</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link active" href="moldhome.html">TRACK MOLDS</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">CONTACT US</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="report.html">REPORT</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">LOG OUT</a>
+					</li>
+
+				</ul>
+			</div>
+		
+		</nav>
+		
+		<!--End Navigation-->
+
+<div class="section"><br><br><br><br><br></div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-6">
+			<div class="box">
+			<a><i class="fa fa-product-hunt" style="margin:230px 200px;color:#58D68D;padding:10px;" onclick="dispmold1()"></i></a>
+			<a><i  class="fa fa-product-hunt" style="margin:335px 200px;color:red;padding:5px;"  onclick="dispmold2()"></i></a>
+			<a><i class="fa fa-product-hunt" style="margin:220px 465px;color:red;padding:5px;"  onclick="dispmold3()"></i></a>
+			<a><i class="fa fa-circle" style="margin:310px 465px;color:#7D3C98;padding:5px;"></i></a>
+			  <img src="ambfloormap1.jpg" alt="" width="700px">
+			</div>
+		</div>
+		<div class="col-lg-6">
+		  <center><div class="dispbox" >
+		  	<div id="id"></div>
+				<div id="temp"></div>
+				<div id="status"></div>
+				<div id="job"></div>
+		  </div></center>
+		</div>
+	</div>
+</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<script>
+	function dispmold1(){
+		document.getElementById('id').innerHTML="Mold ID: A1";
+		document.getElementById('status').innerHTML="Status: ON";
+		document.getElementById('temp').innerHTML="Temperature: 39F";
+		document.getElementById('job').innerHTML="Jobs Done: ";
+	}
+	function dispmold2(){
+		document.getElementById('id').innerHTML="";
+		document.getElementById('temp').innerHTML="";
+		document.getElementById('status').innerHTML="Status    : OFF";
+		document.getElementById('job').innerHTML="";
+	}
+	function dispmold3(){
+		document.getElementById('id').innerHTML="";
+		document.getElementById('temp').innerHTML="";
+		document.getElementById('status').innerHTML="Status    : OFF";
+		document.getElementById('job').innerHTML="";
+
+	}
+</script>
+</body>
+</html>

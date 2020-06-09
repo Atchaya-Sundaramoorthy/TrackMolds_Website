@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style>
+		body{
+			font-family: 'poppins',sans-serif;
+			font-size: 14px;
+			background: #000;
+			color: #fff;
+			}
+			
+		.login-container{
+			height: 100vh;
+			width: 100%;
+			}
+			
+		.login-form{
+			max-width: 100%;
+			width: 370px;
+			padding: 15px;
+			margin: auto;
+			}
+			
+		.form-control{
+			font-size: 15px;
+			min-height: 48px;
+			font-weight: 500;
+			}
+			
+		.form-control:focus{
+			border-color: #da2d2d;
+			box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+			}
+			
+		.forgot-link{
+			font-size: 13px;
+			}
+			
+		.forgot-link label{
+			margin-bottom: 0;
+			}
+			
+		.btn-custom{
+			background: #da2d2d;
+			border-color: #da2d2d;
+			color: #fff;
+			font-size: 15px;
+			font-weight: 600;
+			min-height: 48 px;
+			}
+			
+		.btn-custom:focus,
+		.btn-custom:hover,
+		.btn-custom:active,
+		.btn-custom:active:focus{
+			background: #9d0b0b;
+			border-color: #9d0b0b;
+			color: #fff;
+			}
+			
+		.btn-custom:focus{
+			box-shadow: 0 0 0 0.2rem rgba(114,61,190,.25);
+			}
+			
+		.logo img{
+			position: absolute;
+			margin-top:15px;
+			margin-left:10px;
+			height: 60px;
+			width: 200px;
+			}
+		
+	</style>
+
+</head>
+
+
+<body>
+
+<div class="logo">
+	<a><img src="loginbg.jpg" alt="logo"></a>
+</div>
+	<div class="login-container d-flex align-items-center justify-content-center ">
+		<form class="login-form text-center" action="login.php" name="myform" method="post">
+			<h1 class="mb-5 font-weight-light text-uppercase">Login</h1>
+			<div class="form-group">
+				<input type="text" class="form-control rounded-pill form-control-lg" placeholder="Username" name="uname" required>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control rounded-pill form-control-lg" placeholder="Password" name="pass" required>
+			</div>
+			<div class="forgot-link d-flex align-items-center justify-content-between">
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" id="remember">
+					<label for="remember">Remember Password</label>
+				</div>
+			</div>
+			<button type="submit" class="btn mt-5 btn-custom btn-block rounded-pill btn-lg" name="log">Login</button>		
+			
+		</form>
+
+	</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
